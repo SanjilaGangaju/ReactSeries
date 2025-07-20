@@ -1,35 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+import {Greeting} from './components/Greeting';
+import InfoCard from './components/InfoCard';
+import Button from './components/button';
+import ClickButton from './components/clickButton';
+function App(){
+  const isLoggedIn = true;
+  const user = {name: 'Sanjila', age: 22};
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     <Greeting isLoggedIn ={isLoggedIn} user={user}></Greeting>
+     <InfoCard title="React Starter" description="This is a starter project to learn React fundamentals"></InfoCard>
+     <Button label="click me"></Button>
+     <ClickButton></ClickButton>
     </>
-  )
+  );
 }
-
-export default App
+export default App;
