@@ -24,7 +24,7 @@ body{
 .toggle-switch{
      width: 3.5rem;
      height: 3.4rem;
-     border: 2px solid rgb(253, 251, 251);
+     /* border: 2px solid rgb(253, 251, 251); */
      border-radius: 50%;
      -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
@@ -41,7 +41,7 @@ body{
      -webkit-transition: all .3s linear;
 }
 .toggle-text{
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     
 }
 .on{
