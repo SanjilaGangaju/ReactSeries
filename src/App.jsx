@@ -4,6 +4,7 @@ import InfoCard from './components/InfoCard';
 import Button from './components/button';
 import ClickButton from './components/clickButton';
 import { DerivedState } from './components/DerivedState';
+import { LiftingState } from './components/liftState';
 function App(){
   const isLoggedIn = true;
   const user = {name: 'Sanjila', age: 22};
@@ -14,6 +15,7 @@ function App(){
      <Button label="click me"></Button>
      <ClickButton></ClickButton>
      <DerivedState></DerivedState>
+     <LiftingState></LiftingState>
     </>
   );
 }
