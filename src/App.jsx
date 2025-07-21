@@ -5,18 +5,24 @@ import Button from './components/button';
 import ClickButton from './components/clickButton';
 import { DerivedState } from './components/DerivedState';
 import { LiftingState } from './components/liftState';
+import ToggleSwitchButton from './projects/ToggleSwitchButton/toggleSwitchbutton';
 function App(){
   const isLoggedIn = true;
   const user = {name: 'Sanjila', age: 22};
-  return (
+//   return (
+//     <>
+//      {/* <Greeting isLoggedIn ={isLoggedIn} user={user}></Greeting>
+//      <InfoCard title="React Starter" description="This is a starter project to learn React fundamentals"></InfoCard>
+//      <Button label="click me"></Button>
+//      <ClickButton></ClickButton>
+//      <DerivedState></DerivedState>
+//     
+//     </>
+   return (
     <>
-     <Greeting isLoggedIn ={isLoggedIn} user={user}></Greeting>
-     <InfoCard title="React Starter" description="This is a starter project to learn React fundamentals"></InfoCard>
-     <Button label="click me"></Button>
-     <ClickButton></ClickButton>
-     <DerivedState></DerivedState>
-     <LiftingState></LiftingState>
+    <ToggleSwitchButton></ToggleSwitchButton>
     </>
-  );
+   )
+//   );
 }
 export default App;
