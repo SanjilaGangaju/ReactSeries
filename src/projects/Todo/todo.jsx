@@ -41,7 +41,7 @@ export const Todo = ()=>{
                 </form>
 
             </section>
-            <section clasName="myUnOrdList">
+            <section className="myUnOrdList">
                 <ul>
                     {
                         task.map((currTask, index)=>{

@@ -1,8 +1,93 @@
+body{
+    background-color: #000000;
+}
+h1{
+    color: white;
+}
+.todo-container{
+    background-color: #14213d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.todo-button{
+    background-color: #FCA311;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-input{
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+
+    &:focus{
+        border: 2px solid #FCA311;
+    }
+}
 .form {
+    
     & form {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 12px;
     }
+}
+.myUnOrdList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+ul{
+    width: 100%;
+  
+    padding: 8px 10px;
+    
+}
+.todo-item{
+    width: 100%;
+    margin-bottom: 17px;
+    border-radius: 12px;
+    background-color: #E5E5E5;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 17.5px;
+    color: black;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.check-btn{
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #606C38;
+    
+    
+}
+.delete-btn{
+    color: #780000;
+    font-size: 20px;
+    background-color: transparent;
 }
