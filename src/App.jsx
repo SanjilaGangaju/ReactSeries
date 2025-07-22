@@ -6,6 +6,7 @@ import ClickButton from './components/clickButton';
 import { DerivedState } from './components/DerivedState';
 import { LiftingState } from './components/liftState';
 import ToggleSwitchButton from './projects/ToggleSwitchButton/toggleSwitchbutton';
+import {Todo} from './projects/Todo/todo';
 function App(){
   const isLoggedIn = true;
   const user = {name: 'Sanjila', age: 22};
@@ -20,7 +21,8 @@ function App(){
 //     </>
    return (
     <>
-    <ToggleSwitchButton></ToggleSwitchButton>
+    {/* <ToggleSwitchButton></ToggleSwitchButton> */}
+    <section><Todo></Todo></section>
     </>
    )
 //   );
