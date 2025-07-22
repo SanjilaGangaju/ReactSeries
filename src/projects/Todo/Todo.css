@@ -91,3 +91,9 @@ ul{
     font-size: 20px;
     background-color: transparent;
 }
+.checkList{
+    text-decoration: line-through;
+}
+.notCheckList{
+    text-decoration: none;
+}
