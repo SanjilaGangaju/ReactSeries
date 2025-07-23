@@ -7,6 +7,7 @@ import { DerivedState } from './components/DerivedState';
 import { LiftingState } from './components/liftState';
 import ToggleSwitchButton from './projects/ToggleSwitchButton/toggleSwitchbutton';
 import {Todo} from './projects/Todo/todo';
+import {InputStates} from './components/inputStates';
 function App(){
   const isLoggedIn = true;
   const user = {name: 'Sanjila', age: 22};
@@ -22,7 +23,8 @@ function App(){
    return (
     <>
     {/* <ToggleSwitchButton></ToggleSwitchButton> */}
-    <section><Todo></Todo></section>
+    {/* <section><Todo></Todo></section> */}
+    <InputStates></InputStates>
     </>
    )
 //   );
