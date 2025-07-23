@@ -8,7 +8,9 @@
 // import ToggleSwitchButton from './projects/ToggleSwitchButton/toggleSwitchbutton';
 // import {Todo} from './projects/Todo/todo';
 // import {InputStates} from './components/inputStates';
+import { useState } from 'react';
 import { TodoForm } from './projects/Todo/todoForm';
+import { TodoLists } from './projects/Todo/TodoLists';
 import { TodoTemplate } from './projects/Todo/TodoTemplate';
 function App(){
   // const isLoggedIn = true;
@@ -29,9 +31,17 @@ function App(){
 //     <InputStates></InputStates>
 //     </>
 //    )
+const [todos, setTodos] = useState([]);
+
+const addTodo = (text) =>{
+  const newTodo = {text:text, completed:false};
+  setTodos(newTodo);
+  console.log(todos);
+}
        return (
         <TodoTemplate>
-          <TodoForm></TodoForm>
+          <TodoForm addTodo={addTodo}></TodoForm>
+          <TodoLists></TodoLists>
         </TodoTemplate>
         
        )
