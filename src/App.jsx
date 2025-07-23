@@ -1,16 +1,18 @@
 
-import {Greeting} from './components/Greeting';
-import InfoCard from './components/InfoCard';
-import Button from './components/button';
-import ClickButton from './components/clickButton';
-import { DerivedState } from './components/DerivedState';
-import { LiftingState } from './components/liftState';
-import ToggleSwitchButton from './projects/ToggleSwitchButton/toggleSwitchbutton';
-import {Todo} from './projects/Todo/todo';
-import {InputStates} from './components/inputStates';
+// import {Greeting} from './components/Greeting';
+// import InfoCard from './components/InfoCard';
+// import Button from './components/button';
+// import ClickButton from './components/clickButton';
+// import { DerivedState } from './components/DerivedState';
+// import { LiftingState } from './components/liftState';
+// import ToggleSwitchButton from './projects/ToggleSwitchButton/toggleSwitchbutton';
+// import {Todo} from './projects/Todo/todo';
+// import {InputStates} from './components/inputStates';
+import { TodoForm } from './projects/Todo/todoForm';
+import { TodoTemplate } from './projects/Todo/TodoTemplate';
 function App(){
-  const isLoggedIn = true;
-  const user = {name: 'Sanjila', age: 22};
+  // const isLoggedIn = true;
+  // const user = {name: 'Sanjila', age: 22};
 //   return (
 //     <>
 //      {/* <Greeting isLoggedIn ={isLoggedIn} user={user}></Greeting>
@@ -20,13 +22,19 @@ function App(){
 //      <DerivedState></DerivedState>
 //     
 //     </>
-   return (
-    <>
-    {/* <ToggleSwitchButton></ToggleSwitchButton> */}
-    {/* <section><Todo></Todo></section> */}
-    <InputStates></InputStates>
-    </>
-   )
-//   );
-}
+//    return (
+//     <>
+//     {/* <ToggleSwitchButton></ToggleSwitchButton> */}
+//     {/* <section><Todo></Todo></section> */}
+//     <InputStates></InputStates>
+//     </>
+//    )
+       return (
+        <TodoTemplate>
+          <TodoForm></TodoForm>
+        </TodoTemplate>
+        
+       )
+// //   );
+ }
 export default App;
