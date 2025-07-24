@@ -1,4 +1,4 @@
-export const TodoForm = ()=>{
+export const TodoForm = ({ inputValue, handleInputValue, handleSubmit })=>{
      return (
         <div className="todo-form--container">
           <form onSubmit={handleSubmit}>
