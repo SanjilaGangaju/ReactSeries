@@ -1,6 +1,6 @@
 import '../Todo/todo.css';
 import { FaCheck } from "react-icons/fa6";
-import { MdDelete } from "react-icons/md";
+import { MdCheck, MdDelete } from "react-icons/md";
 import { v4 as uuidv4 } from 'uuid';
 import {useState} from 'react';
 export const TodoList = ()=>{
@@ -84,7 +84,7 @@ export const TodoList = ()=>{
                 
                  <span className="todo-name" style={{ textDecoration: checked ? "line-through" : "none" }}>{todo}</span>
                 
-                  <button className="check-button" onClick={()=>handleCheck(currTask)}> <FaCheck /></button>
+                  <button className="check-button" onClick={()=>handleCheck(currTask)}><MdCheck /></button>
                   <button className="delete-button" onClick={()=>handleDelete(currTask)}><MdDelete /></button>
 
                 
@@ -93,8 +93,9 @@ export const TodoList = ()=>{
 
       })}
     </ul>
-    <button className="clear-all" onClick={()=>handleClearAll()}>Clear All</button>
   </div>
+      <button className="clear-all" onClick={()=>handleClearAll()}>Clear All</button>
+
   </div>
   
   </>
