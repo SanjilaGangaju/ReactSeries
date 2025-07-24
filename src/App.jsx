@@ -1,8 +1,15 @@
-import { TodoList } from "./projects/Todo/TodoList";
+import { TodoForm } from "./projects/Todo/TodoForm";
+
+import { TodoWrapper } from "./projects/Todo/TodoWrapper";
+import './projects/Todo/todo.css';
 
 function App(){
+  const [inputValue, setInputValue] = useState("");
   return (
-    <TodoList></TodoList>
+    <TodoWrapper>
+      <TodoForm></TodoForm>
+    </TodoWrapper>
+
   )
 }
 export default App;
