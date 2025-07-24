@@ -62,8 +62,9 @@ export const TodoList = ()=>{
       setTask([]);
     }
   return (
-    <>
-  <h1>Todo App</h1>
+  <>
+  <div className="todo-container">
+    <h1>Todo App</h1>
   <div className="todo-form--container">
    <form onSubmit={handleSubmit}>
     <input type="text" value={inputValue} onChange={handleInputValue}></input>
@@ -91,6 +92,8 @@ export const TodoList = ()=>{
     </ul>
     <button onClick={()=>handleClearAll()}>Clear All</button>
   </div>
+  </div>
+  
   </>
 );
 

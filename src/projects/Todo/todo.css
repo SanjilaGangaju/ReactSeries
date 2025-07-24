@@ -2,7 +2,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #2e3532;
 }
 .todo-form--container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-lists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #E0E2DB;
 }
