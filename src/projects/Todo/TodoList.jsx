@@ -46,10 +46,21 @@ export const TodoList = ()=>{
 
   }
   const handleDelete=(value)=>{
-       task.filter((currTask)=>{
-        
+   
+      const deleteTodo=task.filter((todoItem)=>{
+        return todoItem.index != value.index;
+         
        })
+       
+       
+    setTask(deleteTodo);
+
+    
+       
   }
+  const handleClearAll =()=>{
+      setTask([]);
+    }
   return (
     <>
   <h1>Todo App</h1>
@@ -78,6 +89,7 @@ export const TodoList = ()=>{
 
       })}
     </ul>
+    <button onClick={()=>handleClearAll()}>Clear All</button>
   </div>
   </>
 );
