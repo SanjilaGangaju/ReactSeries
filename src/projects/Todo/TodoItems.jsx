@@ -2,7 +2,7 @@
 import { MdCheck, MdDelete } from "react-icons/md";
 import '../Todo/todo.css';
 export const TodoItems = ({ checked, todo, handleCheck, handleDelete })=>{
-   console.log(todo);
+   
      return (
             <li>
                 
