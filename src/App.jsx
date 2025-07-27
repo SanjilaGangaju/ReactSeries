@@ -1,14 +1,15 @@
 
-
-import { TodoWrapper } from "./projects/Todo/TodoWrapper";
-import './projects/Todo/todo.css';
+import ComponentA from "./components/ComponentA";
+import { ComponentB } from "./components/ComponentB";
+import { UserProvider } from "./components/UserContext";
 
 function App(){
- 
+ const user = {name: 'Sanjila'}
   return (
-    <TodoWrapper>
-    </TodoWrapper>
-
+    <UserProvider>
+      <ComponentA></ComponentA>
+      <ComponentB></ComponentB>
+    </UserProvider>
   )
 }
 export default App;
