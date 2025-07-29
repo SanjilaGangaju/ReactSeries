@@ -1,12 +1,13 @@
 import React from 'react'
-import UseEffect from './components/UseEffect'
-import FetchData from './components/FetchData'
-import Form from './components/Form'
+// import UseEffect from './components/UseEffect'
+// import FetchData from './components/FetchData'
+// import Form from './components/Form'
+import MultipleInputHandling from './components/MultipleInputHandling'
 
 const App = () => {
   return (
     <div>
-    <Form></Form>
+    <MultipleInputHandling></MultipleInputHandling>
     </div>
   )
 }
