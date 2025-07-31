@@ -13,6 +13,7 @@ const About = () => {
     <div>
       <button onClick={Home}>Go to Home</button>
       <button onClick={Previous}>Previous</button>
+      <div>This is about</div>
     </div>
   )
 }
