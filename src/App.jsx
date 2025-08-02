@@ -1,19 +1,23 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Product from './pages/Product'
-import ProductDetail from './pages/ProductDetail'
-import Navbar from './components/Navbar'
-import Dashboard from './pages/Dashboard'
-import Profile from './pages/Profile'
-import Central from './components/propsdrillling/Central';
-
+// import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+// import Home from './pages/Home'
+// import About from './pages/About'
+// import Contact from './pages/Contact'
+// import Product from './pages/Product'
+// import ProductDetail from './pages/ProductDetail'
+// import Navbar from './components/Navbar'
+// import Dashboard from './pages/Dashboard'
+// import Profile from './pages/Profile'
+// import Central from './components/propsdrillling/Central';
+import { useSelector, useDispatch } from 'react-redux'
+import { decrement, increment } from './redux/counterSlice'
 const App = () => {
+   const counter = useSelector(state => state.counter.value)
+  const dispatch = useDispatch()
   return (
+ 
     <div>
-      <Router>
+      {/* <Router>
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Central></Central>}></Route>
@@ -25,7 +29,11 @@ const App = () => {
           <Route path="/profile" element={<Profile></Profile>}></Route>
         </Routes>
 
-      </Router>
+      </Router> */}
+      <h1>{counter}</h1>
+      <button onClick={()=>dispatch(increment())}>Increase</button>
+      <button>Decrease</button>
+
     </div>
   )
 }
